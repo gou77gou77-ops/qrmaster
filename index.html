@@ -1,86 +1,314 @@
-개인정보처리방침
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · QR Master</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --card: #ffffff;
+    --text: #1a1d23;
+    --muted: #5f6673;
+    --line: #e3e6eb;
+    --accent: #2563ff;
+    --accent-soft: #e8efff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111318;
+      --card: #1a1d24;
+      --text: #e9ecf1;
+      --muted: #9aa3b2;
+      --line: #2b303a;
+      --accent: #6d97ff;
+      --accent-soft: #1f2a44;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Apple SD Gothic Neo", "Noto Sans KR", "Hiragino Sans", "Noto Sans JP",
+      sans-serif;
+    line-height: 1.7;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  nav {
+    display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 16px;
+  }
+  nav button {
+    border: 1px solid var(--line); background: var(--card); color: var(--text);
+    padding: 6px 14px; border-radius: 999px; font-size: 14px; cursor: pointer;
+  }
+  nav button[aria-pressed="true"] {
+    background: var(--accent); border-color: var(--accent); color: #fff;
+  }
+  article {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 28px 24px;
+  }
+  article[hidden] { display: none; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+  h2 {
+    font-size: 18px; margin: 32px 0 8px; padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+  p, li { font-size: 15.5px; }
+  ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  .note {
+    background: var(--accent-soft); border-radius: 10px;
+    padding: 12px 14px; font-size: 14.5px;
+  }
+  footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 24px; }
+</style>
+</head>
+<body>
+<main>
+  <nav aria-label="Language">
+    <button type="button" data-lang="ko">한국어</button>
+    <button type="button" data-lang="en">English</button>
+    <button type="button" data-lang="ja">日本語</button>
+  </nav>
 
-최종 업데이트: 2026년 7월 17일
+  <!-- ===================== 한국어 ===================== -->
+  <article lang="ko" data-lang="ko" hidden>
+    <h1>개인정보처리방침</h1>
+    <p class="updated">시행일: 2026년 10월 13일</p>
 
-QR Master(이하 "앱")는 사용자의 개인정보를 중요하게 생각하며, 관련 법령을 준수합니다.
+    <p>QR Master(앱 표시 이름: QR 바코드 스캐너, 이하 "앱")는 사용자의 개인정보를 중요하게 생각합니다. 이 방침은 앱이 어떤 정보를 다루는지, 어디에 저장되는지, 외부로 전달되는 경우가 언제인지 설명합니다.</p>
 
-본 개인정보처리방침은 앱에서 수집하는 정보와 이용 목적을 설명합니다.
+    <h2>1. 기기에만 저장되는 정보</h2>
+    <p>앱은 회원가입이나 로그인을 제공하지 않으며, 개발자가 운영하는 서버가 없습니다. 다음 정보는 사용자의 기기 안에만 저장됩니다.</p>
+    <ul>
+      <li>QR·바코드 스캔 기록과 생성 기록</li>
+      <li>즐겨찾기</li>
+      <li>앱 설정(언어, 테마, 실행 시 바로 스캔 등)</li>
+    </ul>
+    <p>개발자는 이 정보에 접근할 수 없습니다. 다만 기기의 백업 설정에 따라 사용자 본인의 Google 계정 백업에 포함될 수 있으며, 이 백업은 사용자가 기기 설정에서 직접 관리합니다.</p>
 
-1. 수집하는 정보
+    <h2>2. 카메라</h2>
+    <p>QR 코드와 바코드를 인식하기 위해 카메라 권한을 요청합니다. 카메라 영상은 기기 안에서 코드 인식에만 사용되며, 저장하거나 외부로 전송하지 않습니다.</p>
 
-본 앱은 회원가입을 제공하지 않습니다.
+    <h2>3. 사진 및 이미지</h2>
+    <ul>
+      <li><strong>갤러리에서 인식:</strong> 사용자가 시스템 사진 선택 화면에서 직접 고른 이미지만 읽어 코드를 인식합니다. 이미지는 업로드되지 않습니다.</li>
+      <li><strong>QR·바코드 이미지 저장:</strong> Android 10 이상에서는 별도 권한 없이 기기의 사진 폴더에 저장합니다. Android 9 이하에서는 저장을 위해 저장소 권한을 요청합니다.</li>
+    </ul>
 
-다음 정보는 기기 내부에서만 저장됩니다.
+    <h2>4. 연락처와 일정</h2>
+    <p>앱은 연락처 권한이나 캘린더 권한을 요청하지 않습니다. 스캔한 연락처나 일정을 저장할 때는 기기의 연락처 앱 또는 캘린더 앱이 내용이 채워진 상태로 열리며, 저장 여부는 사용자가 그 앱에서 직접 결정합니다.</p>
 
-QR/바코드 스캔 기록
-즐겨찾기
-앱 설정(언어, 테마 등)
+    <h2>5. 외부 앱·서비스로 전달되는 경우</h2>
+    <p>사용자가 직접 버튼을 누를 때에만, 스캔한 내용이 다음과 같이 다른 앱이나 서비스로 전달됩니다.</p>
+    <ul>
+      <li><strong>열기:</strong> 웹 주소는 브라우저로, 전화번호·이메일·문자·위치는 해당 앱으로 전달됩니다.</li>
+      <li><strong>검색:</strong> 상품 바코드나 텍스트를 네이버쇼핑 또는 Google 검색으로 전달합니다.</li>
+      <li><strong>복사·공유:</strong> 클립보드나 사용자가 선택한 앱으로 전달됩니다.</li>
+    </ul>
+    <p>전달된 이후에는 해당 앱·서비스의 개인정보처리방침이 적용됩니다.</p>
 
-위 데이터는 사용자의 기기 내부에만 저장되며 외부 서버로 전송되지 않습니다.
+    <h2>6. 광고 (Google AdMob)</h2>
+    <p>앱은 무료로 제공되며 Google AdMob 광고를 표시합니다. 광고를 제공하고 성과를 측정하기 위해 Google이 다음 정보를 수집·처리할 수 있습니다.</p>
+    <ul>
+      <li>광고 식별자(Advertising ID)</li>
+      <li>기기 및 앱 정보(기기 모델, 운영체제 버전, 앱 버전 등)</li>
+      <li>IP 주소 및 이를 바탕으로 한 대략적인 위치</li>
+      <li>광고 노출·클릭 등 광고와의 상호작용, 진단 정보</li>
+    </ul>
+    <p>스캔 내용, 기록, 즐겨찾기는 광고 SDK로 전달되지 않습니다. 기기 설정의 광고 메뉴에서 광고 ID를 삭제하거나 맞춤 광고를 끌 수 있습니다.</p>
+    <p>자세한 내용: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a> · <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google이 파트너 앱의 정보를 사용하는 방식</a></p>
 
-2. 카메라 권한
+    <h2>7. 앱 평가 요청</h2>
+    <p>앱은 Google Play의 인앱 평가 기능을 사용해 평가 창을 표시할 수 있습니다. 평가 내용은 Google Play가 처리하며, 앱이나 개발자에게 전달되지 않습니다.</p>
 
-QR 및 바코드 스캔을 위해 카메라 권한을 요청합니다.
+    <h2>8. 데이터 판매 및 제공</h2>
+    <p>개발자는 사용자의 개인정보를 판매하거나 제3자에게 제공하지 않습니다. 위 6항의 광고 서비스는 Google의 정책에 따라 운영됩니다.</p>
 
-카메라 영상은 QR 및 바코드 인식을 위해서만 사용되며 저장하거나 서버로 전송하지 않습니다.
+    <h2>9. 보관 및 삭제</h2>
+    <p>기기에 저장된 기록과 즐겨찾기는 앱의 기록 화면에서 언제든 삭제할 수 있습니다. 앱을 삭제하면 기기에 저장된 앱 데이터도 함께 삭제됩니다.</p>
 
-3. 사진 및 미디어 접근
+    <h2>10. 아동의 개인정보</h2>
+    <p>앱은 만 13세 미만 아동을 대상으로 하지 않으며, 개발자는 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
 
-사용자가 갤러리에서 QR 또는 바코드를 인식하거나 생성한 QR 이미지를 저장하는 경우 사진 접근 권한이 사용될 수 있습니다.
+    <h2>11. 방침의 변경</h2>
+    <p>이 방침은 앱 기능이나 관련 법령이 바뀌면 변경될 수 있으며, 변경 내용은 이 페이지에 게시합니다.</p>
 
-선택한 이미지는 해당 기능 수행에만 사용되며 서버로 업로드되지 않습니다.
+    <h2>12. 문의</h2>
+    <p class="note">개발자: susuim<br>이메일: <a href="mailto:gou77gou77@gmail.com">gou77gou77@gmail.com</a></p>
+  </article>
 
-4. 인터넷 사용
+  <!-- ===================== English ===================== -->
+  <article lang="en" data-lang="en" hidden>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Effective date: October 13, 2026</p>
 
-앱은 다음 목적으로 인터넷을 사용할 수 있습니다.
+    <p>QR Master (shown on your device as QR &amp; Barcode Scanner, the "App") respects your privacy. This policy explains what information the App handles, where it is stored, and when it leaves your device.</p>
 
-광고 제공(Google AdMob)
-개인정보처리방침 확인
+    <h2>1. Information stored only on your device</h2>
+    <p>The App has no sign-up or login, and the developer operates no servers. The following is stored only on your device:</p>
+    <ul>
+      <li>Scan history and generated codes</li>
+      <li>Favorites</li>
+      <li>App settings (language, theme, open scanner on launch, etc.)</li>
+    </ul>
+    <p>The developer cannot access this information. Depending on your device's backup settings, it may be included in your own Google account backup, which you control in your device settings.</p>
 
-QR 생성 및 스캔 데이터는 인터넷으로 전송되지 않습니다.
+    <h2>2. Camera</h2>
+    <p>The App requests camera permission to read QR codes and barcodes. Camera images are processed on your device only to recognize codes and are never stored or transmitted.</p>
 
-5. 광고
+    <h2>3. Photos and images</h2>
+    <ul>
+      <li><strong>Scanning from your gallery:</strong> the App reads only the image you choose in the system photo picker. The image is not uploaded.</li>
+      <li><strong>Saving QR and barcode images:</strong> on Android 10 and later, images are saved to your Pictures folder without any permission. On Android 9 and earlier, the App asks for storage permission to save.</li>
+    </ul>
 
-본 앱은 Google AdMob을 사용하여 광고를 제공합니다.
+    <h2>4. Contacts and calendar</h2>
+    <p>The App does not request contacts or calendar permission. When you save a scanned contact or event, your device's Contacts or Calendar app opens with the details filled in, and you decide there whether to save it.</p>
 
-Google은 광고 제공을 위해 광고 식별자(Advertising ID) 등 일부 정보를 처리할 수 있습니다.
+    <h2>5. When information goes to other apps or services</h2>
+    <p>Only when you tap a button, the scanned content is passed on as follows:</p>
+    <ul>
+      <li><strong>Open:</strong> web addresses go to your browser; phone numbers, emails, messages and locations go to the matching app.</li>
+      <li><strong>Search:</strong> product barcodes or text are sent to Google Search (and to Naver Shopping when the App is in Korean).</li>
+      <li><strong>Copy and share:</strong> content goes to the clipboard or the app you choose.</li>
+    </ul>
+    <p>Once passed on, the privacy policy of that app or service applies.</p>
 
-자세한 내용은 Google의 개인정보처리방침을 참고하시기 바랍니다.
+    <h2>6. Advertising (Google AdMob)</h2>
+    <p>The App is free and shows ads from Google AdMob. To serve and measure ads, Google may collect and process:</p>
+    <ul>
+      <li>Advertising ID</li>
+      <li>Device and app information (device model, OS version, app version, etc.)</li>
+      <li>IP address and approximate location derived from it</li>
+      <li>Ad interactions (impressions, clicks) and diagnostic information</li>
+    </ul>
+    <p>Your scans, history and favorites are never shared with the ad SDK. You can reset or delete your advertising ID, or turn off personalized ads, in your device's ad settings.</p>
+    <p>Learn more: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps that use its services</a></p>
 
-https://policies.google.com/privacy
+    <h2>7. Rating requests</h2>
+    <p>The App may show a rating prompt using Google Play's in-app review feature. Your rating is handled by Google Play and is not shared with the App or the developer.</p>
 
-6. 데이터 공유
+    <h2>8. Selling and sharing data</h2>
+    <p>The developer does not sell your personal information or share it with third parties. The advertising service in section 6 operates under Google's policies.</p>
 
-개발자는 사용자의 개인정보를 판매하거나 제3자에게 제공하지 않습니다.
+    <h2>9. Retention and deletion</h2>
+    <p>You can delete history and favorites at any time from the App's history screen. Uninstalling the App deletes its data from your device.</p>
 
-단, Google AdMob 등 서비스 제공에 필요한 경우 해당 서비스 제공자의 정책이 적용될 수 있습니다.
+    <h2>10. Children's privacy</h2>
+    <p>The App is not directed to children under 13, and the developer does not knowingly collect personal information from children.</p>
 
-7. 데이터 보관
+    <h2>11. Changes to this policy</h2>
+    <p>This policy may change when the App's features or applicable laws change. Any changes will be posted on this page.</p>
 
-앱에서 생성되는 기록 및 설정은 사용자의 기기에 저장됩니다.
+    <h2>12. Contact</h2>
+    <p class="note">Developer: susuim<br>Email: <a href="mailto:gou77gou77@gmail.com">gou77gou77@gmail.com</a></p>
+  </article>
 
-앱 삭제 시 저장된 데이터는 함께 삭제될 수 있습니다.
+  <!-- ===================== 日本語 ===================== -->
+  <article lang="ja" data-lang="ja" hidden>
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">施行日：2026年10月13日</p>
 
-8. 아동의 개인정보
+    <p>QR Master（端末上の表示名：QR・バーコードスキャナー、以下「本アプリ」）は、ユーザーのプライバシーを尊重します。本ポリシーでは、本アプリが扱う情報、その保存場所、端末の外に送られる場合について説明します。</p>
 
-본 앱은 만 13세 미만 아동을 대상으로 하지 않습니다.
+    <h2>1. 端末内にのみ保存される情報</h2>
+    <p>本アプリには会員登録やログインはなく、開発者が運営するサーバーもありません。次の情報はユーザーの端末内にのみ保存されます。</p>
+    <ul>
+      <li>スキャン履歴と作成履歴</li>
+      <li>お気に入り</li>
+      <li>アプリの設定（言語、テーマ、起動時にスキャンなど）</li>
+    </ul>
+    <p>開発者はこれらの情報にアクセスできません。ただし、端末のバックアップ設定によっては、ユーザーご自身の Google アカウントのバックアップに含まれる場合があります。このバックアップは端末の設定からユーザーが管理します。</p>
 
-개발자는 의도적으로 아동의 개인정보를 수집하지 않습니다.
+    <h2>2. カメラ</h2>
+    <p>QR コードとバーコードを読み取るためにカメラの権限を求めます。カメラ映像は端末内でコードの認識にのみ使用し、保存や送信は行いません。</p>
 
-9. 개인정보처리방침 변경
+    <h2>3. 写真と画像</h2>
+    <ul>
+      <li><strong>ギャラリーから読み取り：</strong>システムの写真選択画面でユーザーが選んだ画像のみを読み込みます。画像はアップロードされません。</li>
+      <li><strong>QR・バーコード画像の保存：</strong>Android 10 以降は権限なしで端末の写真フォルダに保存します。Android 9 以前は保存のためにストレージの権限を求めます。</li>
+    </ul>
 
-본 개인정보처리방침은 필요에 따라 변경될 수 있습니다.
+    <h2>4. 連絡先とカレンダー</h2>
+    <p>本アプリは連絡先やカレンダーの権限を求めません。スキャンした連絡先や予定を保存するときは、内容が入力された状態で端末の連絡先アプリまたはカレンダーアプリが開き、保存するかどうかはユーザーがそのアプリで決めます。</p>
 
-변경사항은 본 페이지를 통해 공지됩니다.
+    <h2>5. 他のアプリ・サービスに渡される場合</h2>
+    <p>ユーザーがボタンを押したときに限り、スキャンした内容が次のように渡されます。</p>
+    <ul>
+      <li><strong>開く：</strong>URL はブラウザへ、電話番号・メール・SMS・位置情報は対応するアプリへ渡されます。</li>
+      <li><strong>検索：</strong>商品バーコードやテキストを Google 検索に送ります。</li>
+      <li><strong>コピー・共有：</strong>クリップボード、またはユーザーが選んだアプリに渡されます。</li>
+    </ul>
+    <p>渡された後は、そのアプリ・サービスのプライバシーポリシーが適用されます。</p>
 
-10. 문의
+    <h2>6. 広告（Google AdMob）</h2>
+    <p>本アプリは無料で提供され、Google AdMob の広告を表示します。広告の配信と効果測定のため、Google が次の情報を収集・処理する場合があります。</p>
+    <ul>
+      <li>広告 ID</li>
+      <li>端末とアプリの情報（機種、OS のバージョン、アプリのバージョンなど）</li>
+      <li>IP アドレスと、それに基づくおおよその位置</li>
+      <li>広告の表示・クリックなどの操作、診断情報</li>
+    </ul>
+    <p>スキャン内容、履歴、お気に入りが広告 SDK に渡されることはありません。端末の広告設定から、広告 ID のリセット・削除やパーソナライズ広告のオフが行えます。</p>
+    <p>詳細：<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a> · <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google のサービスを使用するアプリから収集した情報の Google による使用</a></p>
 
-문의사항이 있으시면 아래 이메일로 연락해 주세요.
+    <h2>7. 評価のお願い</h2>
+    <p>本アプリは Google Play のアプリ内レビュー機能で評価画面を表示することがあります。評価内容は Google Play が処理し、本アプリや開発者には送られません。</p>
 
-이메일
+    <h2>8. データの販売と提供</h2>
+    <p>開発者はユーザーの個人情報を販売したり、第三者に提供したりしません。第 6 項の広告サービスは Google のポリシーに基づいて運営されます。</p>
 
-gou77gou77@gmail.com
+    <h2>9. 保存と削除</h2>
+    <p>端末に保存された履歴とお気に入りは、アプリの履歴画面からいつでも削除できます。アプリをアンインストールすると、端末内のアプリデータも削除されます。</p>
 
-개발자
+    <h2>10. 子どものプライバシー</h2>
+    <p>本アプリは 13 歳未満の子どもを対象としておらず、開発者が子どもの個人情報を意図的に収集することはありません。</p>
 
-susuim
+    <h2>11. 本ポリシーの変更</h2>
+    <p>本ポリシーは、アプリの機能や関係法令の変更に応じて改定することがあります。変更内容はこのページに掲載します。</p>
+
+    <h2>12. お問い合わせ</h2>
+    <p class="note">開発者：susuim<br>メール：<a href="mailto:gou77gou77@gmail.com">gou77gou77@gmail.com</a></p>
+  </article>
+
+  <footer>© 2026 susuim</footer>
+</main>
+
+<script>
+  // 언어 선택 순서: ?lang=ko 주소 → 브라우저 언어(ko/ja) → 그 외 영어
+  (function () {
+    var langs = ["ko", "en", "ja"];
+    function pick() {
+      try {
+        var q = new URLSearchParams(location.search).get("lang");
+        if (q && langs.indexOf(q) >= 0) return q;
+      } catch (e) {}
+      var nav = (navigator.language || "en").toLowerCase();
+      if (nav.indexOf("ko") === 0) return "ko";
+      if (nav.indexOf("ja") === 0) return "ja";
+      return "en";
+    }
+    function show(lang) {
+      document.querySelectorAll("article[data-lang]").forEach(function (a) {
+        a.hidden = a.dataset.lang !== lang;
+      });
+      document.querySelectorAll("nav button").forEach(function (b) {
+        b.setAttribute("aria-pressed", b.dataset.lang === lang ? "true" : "false");
+      });
+      document.documentElement.lang = lang;
+    }
+    document.querySelectorAll("nav button").forEach(function (b) {
+      b.addEventListener("click", function () { show(b.dataset.lang); });
+    });
+    show(pick());
+  })();
+</script>
+</body>
+</html>
